@@ -54,6 +54,7 @@
 
 <script>
 import vFoot from '../components/Footer.vue'
+// import request from '../utils/request'
 export default {
   data () {
     return {
@@ -63,6 +64,35 @@ export default {
   components: {
     vFoot
   }
+  // created () {
+  //   this.testApi()
+  // },
+  // methods: {
+  //   testApi: function () {
+  //     request.ajaxPost(
+  //       '/news/index',
+  //       'type=top&key=123456',
+  //       resp => {
+  //         console.log(resp)
+  //         if (resp.success) {
+  //           let pageData = resp.data
+  //           this.dataList = pageData.list
+  //           // console.log(this.dataList)
+  //           this.totalSize = pageData.total
+  //
+  //           setTimeout(() => {
+  //             this.loading = false
+  //           }, 200)
+  //         } else {
+  //           this.errorTip(resp.errorMsg)
+  //           setTimeout(() => {
+  //             this.loading = false
+  //           }, 200)
+  //         }
+  //       }
+  //     )
+  //   }
+  // }
 }
 </script>
 
